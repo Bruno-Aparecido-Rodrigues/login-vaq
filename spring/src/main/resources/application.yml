@@ -1,5 +1,5 @@
 server:
-  port: 8081
+  port: ${PORT:8081}
 
 spring:
   application:
@@ -17,7 +17,7 @@ jwt:
 
 cookie:
   # true somente quando estiver rodando em HTTPS
-  secure: false
+  secure: ${COOKIE_SECURE:false}
 
 app:
   admin:
